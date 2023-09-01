@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(216, 180, 158);
+        }
+        form{
+            background-color: antiquewhite;
+            width: 20rem;
+            margin-left: 35%;
+            padding-left: 3rem;
+            padding-right: 2rem;
+        }
+        h1{
+            padding-top: 2rem;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        p{
+            text-align: center;
+            position: relative;
+        }
+        p::before{
+            content: "";
+            height: 1px;
+            width: 8em;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            left: 0;
+
+        }
+
+        p::after{
+            content: "";
+            height: 1px;
+            width: 8em;
+            background: #000;
+            position: absolute;
+            top: 50%;
+            right: 0;
+        }
+        .sign{
+            border-radius: 3rem;
+            width: 6rem;
+            height: 2rem;
+            border-width: 0;
+            margin-left: 2rem;
+            color: white;
+            background-color: rgb(80, 80, 206);
+            font-size: medium;
+        }
+        .btn{
+            border-radius: 3rem;
+            width: 17rem;
+            height: 2rem;
+        }
+        .email, .psw{
+            width: 15rem;
+            border-radius: 3rem;
+            height: 2em;
+            padding-left: 2rem;
+        }
+        .icon{
+            position: absolute;
+            width: 2rem;
+            padding-left: 2em  
+            ;
+            
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Sign In</h1>
+        <p1 style="font-family: Arial, Helvetica, sans-serif;">New User? <a href="create a new account">Create an account</a></p1><br><br>
+        <input type="text" placeholder="Email Address" class="email"><br><br>
+        <input type="text" placeholder="Password" class="psw"><br><br>
+        <a href="Forgot Password" style="font-family: Arial, Helvetica, sans-serif;">Forgot Password</a>
+        <input type="button" value="Sign In" class="sign"><br>
+        <p>Or</p>
+        <div>
+            <img src="icons8-google-100.png" class="icon">
+            <input type="button" value="Sign In With Google" class="btn">
+            <br><br>
+        </div>
+    
+        <div>
+            <img src="icons8-google-100.png" class="icon">
+            <input type="button" value="Sign In With Facebook" class="btn">
+            <br><br>
+        </div>
+    
+        <div>
+            <img src="icons8-google-100.png" class="icon">
+            <input type="button" value="Sign In With Apple" class="btn">
+            <br><br>
+        </div>
+    
+    </form>
+</body>
+</html>
